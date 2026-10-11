@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L'IA qui rapporte — Le guide pratique pour vendre tes services avec ChatGPT et Claude</title>
+<meta name="description" content="113 pages, 3 démonstrations complètes, 45 prompts, 10 messages de prospection, un modèle de devis et un plan sur 90 jours pour décrocher tes premiers clients avec ChatGPT et Claude.">
+<meta property="og:title" content="L'IA qui rapporte">
+<meta property="og:description" content="Le guide pratique pour créer, présenter et vendre tes services avec ChatGPT et Claude.">
+<meta property="og:image" content="images/couverture.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+/* =====================================================================
+   RÉGLAGES — LES 2 SEULES LIGNES À MODIFIER
+   1) Colle ton lien de paiement Chariow entre les guillemets.
+   2) Écris ton prix (ex. "9 900 FCFA" ou "15 $"). Laisse "" pour ne pas l'afficher.
+   ===================================================================== */
+const LIEN_CHARIOW = "https://bslmpstz.mychariow.shop/prd_fycxx5mz";
+const PRIX = "19 $";
+</script>
+
+<style>
+:root{--g:#0d4a3f;--g2:#08332b;--a:#e8962e;--a2:#f6b144;--cream:#f7f1e6;--ink:#1b2530;--mut:#5b6875;--line:#e6dfd0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.narrow{max-width:740px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;margin:0 0 .5em;font-weight:800}
+h1{font-size:clamp(2rem,6.2vw,3.5rem)}
+h2{font-size:clamp(1.6rem,4.4vw,2.4rem);color:var(--g)}
+h3{font-size:1.15rem;letter-spacing:-.01em}
+p{margin:0 0 1em}
+section{padding:64px 0}
+.kicker{font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--a);margin-bottom:14px;display:block}
+.lead{font-size:1.15rem;color:var(--mut)}
+mark{background:linear-gradient(transparent 58%,rgba(232,150,46,.45) 58%);color:inherit;padding:0 2px}
+
+/* boutons */
+.cta{display:inline-block;background:var(--a);color:#1a1205;font-weight:800;font-size:1.08rem;text-decoration:none;padding:18px 30px;border-radius:12px;box-shadow:0 8px 0 #b56d16,0 18px 30px rgba(0,0,0,.18);transition:transform .12s,box-shadow .12s;text-align:center}
+.cta:hover{transform:translateY(2px);box-shadow:0 6px 0 #b56d16,0 12px 22px rgba(0,0,0,.18)}
+.cta:active{transform:translateY(6px);box-shadow:0 2px 0 #b56d16}
+.cta small{display:block;font-weight:600;font-size:.8rem;opacity:.8;margin-top:2px}
+.under{font-size:.86rem;color:var(--mut);margin-top:18px}
+.dark .under,.hero .under{color:#b9d1c8}
+
+/* barre */
+.bar{position:sticky;top:0;z-index:20;background:var(--g2);color:#fff;font-size:.9rem}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px}
+.bar b{font-weight:800}
+.bar a{background:var(--a);color:#1a1205;font-weight:800;text-decoration:none;padding:8px 16px;border-radius:8px;white-space:nowrap;font-size:.88rem}
+
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 10%,#17695a 0,transparent 60%),var(--g);color:#fff;padding:56px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--a2)}
+.hero .lead{color:#dcebe5;max-width:560px}
+.hero ul{list-style:none;padding:0;margin:22px 0 30px}
+.hero li{padding-left:30px;position:relative;margin-bottom:9px;color:#eef6f2}
+.hero li:before{content:"✓";position:absolute;left:0;top:0;color:var(--a2);font-weight:800}
+.cover{transform:rotate(3deg);border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08);max-width:360px;width:100%;height:auto;margin:0 auto}
+.facts{background:var(--cream);border-bottom:1px solid var(--line);padding:0}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.facts div{padding:22px 8px;border-right:1px solid var(--line)}
+.facts div:last-child{border:0}
+.facts b{display:block;font-size:1.9rem;font-weight:800;color:var(--g);line-height:1.1}
+.facts span{font-size:.84rem;color:var(--mut)}
+
+/* blocs */
+.pain{list-style:none;padding:0;margin:26px 0}
+.pain li{background:#fff;border:1px solid var(--line);border-left:5px solid var(--a);border-radius:10px;padding:16px 18px;margin-bottom:12px}
+.alt{background:var(--cream)}
+.dark{background:var(--g);color:#fff}
+.dark h2{color:#fff}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+.card .n{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--a);margin-bottom:8px}
+.card p{margin:0;color:var(--mut);font-size:.96rem}
+.dark .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+.dark .card h3{color:#fff}.dark .card p{color:#cfe3d9}
+.demo{background:#fff;border-radius:14px;padding:26px;border:1px solid var(--line)}
+.demo .tag{font-size:.74rem;font-weight:700;color:var(--g);background:#e4efe9;border-radius:99px;padding:4px 12px;display:inline-block;margin-bottom:12px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;padding:0;list-style:none;justify-content:center}
+.flow li{background:var(--g);color:#fff;border-radius:99px;padding:8px 16px;font-size:.86rem;font-weight:600}
+.flow li b{color:var(--a2);margin-right:6px}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.shots img{border-radius:8px;border:1px solid var(--line);box-shadow:0 10px 24px rgba(0,0,0,.1)}
+.bonus{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.bonus .b{flex:none;width:46px;height:46px;border-radius:12px;background:var(--g);color:var(--a2);font-weight:800;display:grid;place-items:center;font-size:1.1rem}
+.bonus h3{margin-bottom:4px}.bonus p{margin:0;color:var(--mut);font-size:.95rem}
+.yes li,.no li{list-style:none;position:relative;padding-left:30px;margin-bottom:11px}
+.yes,.no{padding:0;margin:0}
+.yes li:before{content:"✓";position:absolute;left:0;color:#178a5a;font-weight:800}
+.no li:before{content:"✕";position:absolute;left:0;color:#c0492a;font-weight:800}
+
+/* offre */
+.offer{background:#fff;color:var(--ink);border-radius:20px;padding:36px 30px;max-width:640px;margin:34px auto 0;box-shadow:0 30px 70px rgba(0,0,0,.35);text-align:left;border-top:8px solid var(--a)}
+.offer h3{font-size:1.4rem;color:var(--g)}
+.offer ul{list-style:none;padding:0;margin:18px 0 24px}
+.offer li{padding:10px 0 10px 30px;border-bottom:1px dashed var(--line);position:relative;font-size:.98rem}
+.offer li:before{content:"✓";position:absolute;left:0;color:var(--a);font-weight:800}
+.price{text-align:center;margin:8px 0 22px}
+.price b{font-size:3rem;font-weight:800;color:var(--g);letter-spacing:-.03em;line-height:1}
+.price span{display:block;color:var(--mut);font-size:.9rem;margin-top:6px}
+.offer .cta{display:block}
+.center{text-align:center}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:700;cursor:pointer;list-style:none;position:relative;padding-right:34px;font-size:1.04rem}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:4px;top:-4px;font-size:1.6rem;color:var(--a);font-weight:700}
+details[open] summary:after{content:"–"}
+details p{margin:12px 0 0;color:var(--mut)}
+
+footer{background:var(--g2);color:#a9c4ba;font-size:.8rem;padding:34px 0;line-height:1.6}
+.mobilebar{display:none}
+
+@media(max-width:860px){
+  body{font-size:16px;padding-bottom:78px}
+  section{padding:46px 0}
+  .hero{padding:36px 0 52px}
+  .hero .wrap{grid-template-columns:1fr;gap:34px}
+  .cover{max-width:220px}
+  .g3,.g2{grid-template-columns:1fr}
+  .facts .wrap{grid-template-columns:repeat(2,1fr)}
+  .facts div:nth-child(2){border-right:0}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .shots{grid-template-columns:repeat(2,1fr)}
+  .bar a{display:none}.bar .wrap{justify-content:center;text-align:center}
+  .hero .cta{display:block}
+  .mobilebar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;padding:10px 14px;box-shadow:0 -6px 24px rgba(0,0,0,.14)}
+  .mobilebar a{display:block;background:var(--a);color:#1a1205;font-weight:800;text-align:center;text-decoration:none;padding:15px;border-radius:10px}
+}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap">
+  <span>📘 <b>L'IA qui rapporte</b> · le guide pratique, 113 pages en PDF</span>
+  <a class="buy" href="https://bslmpstz.mychariow.shop/prd_fycxx5mz" target="_blank" rel="noopener">Obtenir le guide</a>
+</div></div>
+
+<!-- ============================ HERO ============================ -->
+<header class="hero"><div class="wrap">
+  <div>
+    <span class="kicker">ChatGPT &amp; Claude · Guide pratique</span>
+    <h1>Tu sais te servir de ChatGPT.<br><em>Il te manque le premier client.</em></h1>
+    <p class="lead">« L'IA qui rapporte » te montre, étape par étape, comment transformer ChatGPT et Claude en un service que les commerces de ta ville achètent : une offre claire, un portfolio, des messages de prospection, un devis, une livraison propre.</p>
+    <ul>
+      <li>3 projets réalisés devant toi, de la demande du client au livrable fini</li>
+      <li>45 prompts, 10 messages de prospection, un devis et un brief à copier</li>
+      <li>Un plan semaine par semaine sur 90 jours</li>
+    </ul>
+    <a class="cta buy" href="https://bslmpstz.mychariow.shop/prd_fycxx5mz" target="_blank" rel="noopener">Je veux le guide maintenant<small class="p-inline">Téléchargement immédiat en PDF</small></a>
+    <p class="under">Paiement sécurisé via Chariow · Lisible sur téléphone · Aucun abonnement</p>
+  </div>
+  <img class="cover" src="images/couverture.jpg" alt="Couverture du guide L'IA qui rapporte" width="780" height="1170">
+</div></header>
+
+<div class="facts"><div class="wrap">
+  <div><b>113</b><span>pages pratiques</span></div>
+  <div><b>15</b><span>chapitres</span></div>
+  <div><b>3</b><span>démonstrations complètes</span></div>
+  <div><b>6</b><span>bonus prêts à l'emploi</span></div>
+</div></div>
+
+<!-- ============================ PROBLÈME ============================ -->
+<section><div class="wrap narrow">
+  <span class="kicker">Soyons honnêtes</span>
+  <h2>Tu as tout essayé, sauf vendre.</h2>
+  <p class="lead">Tu as regardé les vidéos. Tu as testé dix outils. Tu as même généré de beaux textes. Et à la fin du mois, il y a toujours zéro franc sur ton compte.</p>
+  <ul class="pain">
+    <li><b>« Je ne sais pas quoi proposer. »</b> Contenu, logos, sites, vidéos, automatisation… Tu veux tout faire, donc personne ne retient ce que tu fais.</li>
+    <li><b>« Je n'ai jamais eu de client, je n'ai rien à montrer. »</b> Alors tu attends d'être prêt. Et les semaines passent.</li>
+    <li><b>« Je ne sais pas quoi écrire à un commerçant. »</b> Tu envoies un message copié-collé. Vu. Pas de réponse.</li>
+    <li><b>« Combien je demande ? »</b> Trop peu, tu t'épuises. Trop, tu n'oses pas. Alors tu dis « on s'arrange ».</li>
+  </ul>
+  <p>Le problème n'a jamais été l'outil. ChatGPT est gratuit et tout le monde y a accès. <mark>Ce qui se paie, c'est un résultat livré à l'heure, par quelqu'un qui s'en occupe.</mark></p>
+  <p>Pendant ce temps, le restaurant de ton quartier n'a rien publié depuis cinq semaines. La boutique d'à côté n'affiche aucun prix. La formatrice que tu connais n'a pas de présentation à envoyer. <b>Ils n'ont pas besoin d'IA. Ils ont besoin de toi.</b></p>
+</div></section>
+
+<!-- ============================ SOLUTION ============================ -->
+<section class="alt"><div class="wrap">
+  <div class="narrow" style="margin:0 auto;text-align:center">
+    <span class="kicker">La méthode</span>
+    <h2>Un chemin en 5 étapes, de « j'apprends » à « j'encaisse »</h2>
+    <p class="lead">Pas de théorie interminable. Chaque chapitre se termine par quelque chose de fait : une phrase, une offre, un projet, une liste de prospects, un devis.</p>
+  </div>
+  <div class="grid g3" style="margin-top:34px">
+    <div class="card"><span class="n">Partie 1</span><h3>Comprendre les opportunités</h3><p>Les 7 services qui se vendent, et une grille pour choisir <b>le tien</b> selon ton temps, ton matériel et ton entourage.</p></div>
+    <div class="card"><span class="n">Partie 2</span><h3>Maîtriser les bons outils</h3><p>ChatGPT, Claude, Canva, CapCut. La structure d'un prompt qui donne un texte utilisable, pas un texte « robot ».</p></div>
+    <div class="card"><span class="n">Partie 3</span><h3>Créer une offre achetable</h3><p>Fiche d'offre complète, 3 projets réalisés pas à pas, et un portfolio honnête même sans aucun client.</p></div>
+    <div class="card"><span class="n">Partie 4</span><h3>Trouver des clients et vendre</h3><p>Où chercher, quoi écrire, comment relancer sans harceler, quoi répondre à « c'est trop cher », comment fixer ton prix.</p></div>
+    <div class="card"><span class="n">Partie 5</span><h3>Durer</h3><p>Modèles, tableaux de suivi, et un plan sur 90 jours avec des repères chiffrés semaine par semaine.</p></div>
+    <div class="card" style="background:var(--g);border-color:var(--g)"><span class="n">+ 6 bonus</span><h3 style="color:#fff">La boîte à outils</h3><p style="color:#cfe3d9">Tout ce qui se copie et s'adapte : prompts, messages, devis, checklist, tableaux.</p></div>
+  </div>
+</div></section>
+
+<!-- ============================ DÉMOS ============================ -->
+<section><div class="wrap">
+  <div class="narrow" style="margin:0 auto;text-align:center">
+    <span class="kicker">Ce qui fait la différence</span>
+    <h2>Tu ne lis pas une méthode. Tu la regardes fonctionner.</h2>
+    <p class="lead">Trois commandes traitées du premier message WhatsApp jusqu'aux fichiers livrés, avec les prompts exacts, la première réponse de l'IA, ce qui n'allait pas, et la correction.</p>
+  </div>
+  <div class="grid g3" style="margin-top:34px">
+    <div class="demo"><span class="tag">Démonstration 1</span><h3>Un pack de publications pour une pâtisserie</h3><p>Du message « vous pouvez faire quoi et à combien ? » à 8 publications prêtes à poster, avec prix, délai et contact.</p></div>
+    <div class="demo"><span class="tag">Démonstration 2</span><h3>Une vidéo de 30 secondes pour un salon de coiffure</h3><p>Le script plan par plan, la liste de plans à envoyer au client, le montage dans CapCut, les contrôles avant envoi.</p></div>
+    <div class="demo"><span class="tag">Démonstration 3</span><h3>Une page commerciale pour une formatrice</h3><p>La structure bloc par bloc, et comment repérer le chiffre que l'IA a inventé avant que le client ne le voie.</p></div>
+  </div>
+  <ul class="flow">
+    <li><b>1</b>Demande</li><li><b>2</b>Brief</li><li><b>3</b>Premier jet</li><li><b>4</b>Amélioration</li><li><b>5</b>Contrôle</li><li><b>6</b>Livraison</li>
+  </ul>
+  <div class="shots">
+    <img src="images/extrait-1.jpg" alt="Extrait : kit de prompts" loading="lazy">
+    <img src="images/extrait-2.jpg" alt="Extrait : fiche d'offre" loading="lazy">
+    <img src="images/extrait-3.jpg" alt="Extrait : livrable final" loading="lazy">
+    <img src="images/extrait-4.jpg" alt="Extrait : réponses aux objections" loading="lazy">
+  </div>
+  <p class="center under">Extraits réels du guide.</p>
+</div></section>
+
+<!-- ============================ BONUS ============================ -->
+<section class="alt"><div class="wrap">
+  <div class="narrow" style="margin:0 auto;text-align:center">
+    <span class="kicker">Inclus dans le guide</span>
+    <h2>6 bonus pour ne jamais partir d'une page blanche</h2>
+  </div>
+  <div class="grid g2" style="margin-top:30px">
+    <div class="bonus"><div class="b">1</div><div><h3>30 prompts de travail</h3><p>Trouver des idées, rédiger, améliorer, vendre, s'organiser. En plus des 15 prompts détaillés du chapitre 6.</p></div></div>
+    <div class="bonus"><div class="b">2</div><div><h3>10 messages de prospection</h3><p>Premier contact, envoi d'échantillon, relance, réponse à « c'est combien ? », demande de recommandation.</p></div></div>
+    <div class="bonus"><div class="b">3</div><div><h3>La fiche de calcul des prix</h3><p>Taux horaire, temps réel, coûts, marge. Tu sais enfin d'où sort ton tarif, et tu peux le défendre.</p></div></div>
+    <div class="bonus"><div class="b">4</div><div><h3>Le devis et le brief client</h3><p>Un devis d'une page et un questionnaire qui évitent les malentendus et les modifications sans fin.</p></div></div>
+    <div class="bonus"><div class="b">5</div><div><h3>La checklist de livraison</h3><p>Les contrôles avant l'aperçu, avant l'envoi et après, plus le message qui accompagne tes fichiers.</p></div></div>
+    <div class="bonus"><div class="b">6</div><div><h3>Le tableau de suivi</h3><p>Prospects, commandes et bilan mensuel : chiffre d'affaires, bénéfice et bénéfice par heure.</p></div></div>
+  </div>
+</div></section>
+
+<!-- ============================ POUR QUI ============================ -->
+<section><div class="wrap">
+  <div class="grid g2">
+    <div class="card"><h3 style="color:#178a5a;font-size:1.3rem;margin-bottom:16px">Ce guide est pour toi si…</h3>
+      <ul class="yes">
+        <li>Tu débutes et tu veux un chemin clair plutôt que cent vidéos.</li>
+        <li>Tu as un emploi ou des études et quelques heures par semaine.</li>
+        <li>Tu n'as qu'un téléphone ou un ordinateur modeste.</li>
+        <li>Tu veux vendre aux commerces, restaurants, indépendants et PME autour de toi.</li>
+        <li>Tu es prêt à contacter de vrais prospects, chaque semaine.</li>
+      </ul></div>
+    <div class="card"><h3 style="color:#c0492a;font-size:1.3rem;margin-bottom:16px">Il n'est pas pour toi si…</h3>
+      <ul class="no">
+        <li>Tu cherches de l'argent sans travail. Ce guide n'en promet pas.</li>
+        <li>Tu veux un outil magique qui trouve les clients à ta place.</li>
+        <li>Tu ne comptes faire aucun exercice.</li>
+        <li>Tu es déjà un freelance installé avec une clientèle régulière.</li>
+      </ul></div>
+  </div>
+</div></section>
+
+<!-- ============================ OFFRE ============================ -->
+<section class="dark" id="offre"><div class="wrap center">
+  <span class="kicker">Commence aujourd'hui</span>
+  <h2>Ton prochain client est peut-être à deux rues de chez toi.</h2>
+  <p class="lead" style="color:#cfe3d9;max-width:620px;margin:0 auto">Tu peux continuer à chercher seul la bonne offre, le bon message et le bon prix. Ou partir avec tout ce qui est déjà écrit, appliqué à des cas concrets et prêt à adapter.</p>
+
+  <div class="offer">
+    <h3>L'IA qui rapporte · le guide complet</h3>
+    <ul>
+      <li>Le guide de <b>113 pages</b> en PDF, lisible sur téléphone</li>
+      <li><b>15 chapitres</b> en 5 parties, avec exercices</li>
+      <li><b>3 démonstrations</b> complètes, de la demande au livrable</li>
+      <li><b>45 prompts</b> à copier et adapter</li>
+      <li><b>10 messages</b> de prospection et les réponses aux 6 objections courantes</li>
+      <li>Fiche de prix, devis, brief, checklist et tableaux de suivi</li>
+      <li>Le <b>plan d'action sur 90 jours</b></li>
+    </ul>
+    <div class="price" id="priceBox" hidden><b class="p-val"></b><span>Paiement unique · accès immédiat</span></div>
+    <a class="cta buy" href="https://bslmpstz.mychariow.shop/prd_fycxx5mz" target="_blank" rel="noopener">Je télécharge mon guide<small>Paiement sécurisé via Chariow</small></a>
+    <p class="under center" style="margin-bottom:0">Tu reçois le PDF juste après le paiement</p>
+  </div>
+</div></section>
+
+<!-- ============================ FAQ ============================ -->
+<section><div class="wrap narrow">
+  <span class="kicker">Questions fréquentes</span>
+  <h2>Avant de te décider</h2>
+  <details><summary>Je débute complètement. Est-ce que je vais suivre ?</summary><p>Oui. Le guide part de zéro : ce qu'est une IA générative, comment lui parler, quel service choisir. Chaque notion est suivie d'un exemple et d'un exercice.</p></details>
+  <details><summary>Faut-il payer un abonnement à ChatGPT ou à Claude ?</summary><p>Non. Les versions gratuites suffisent pour apprendre, construire ton portfolio et servir tes premiers clients. Le guide t'explique à quel moment un abonnement devient rentable.</p></details>
+  <details><summary>Je n'ai qu'un téléphone. C'est possible ?</summary><p>Oui pour la rédaction, les publications, les visuels simples et les vidéos courtes. Un ordinateur est plus confortable pour les documents longs et les sites, mais il n'est pas indispensable pour démarrer.</p></details>
+  <details><summary>Combien vais-je gagner ?</summary><p>Personne ne peut te le promettre, et ce guide ne le fait pas. Tes résultats dépendent de ton service, de ta ville et surtout du nombre de prospects que tu contactes. Le guide te donne la méthode, des repères réalistes et les outils pour mesurer ton bénéfice réel.</p></details>
+  <details><summary>Les exemples sont-ils adaptés à l'Afrique francophone ?</summary><p>Oui. Les cas pratiques se déroulent à Kinshasa, Abidjan et Dakar, avec WhatsApp Business, le mobile money et des prix en FC, FCFA et dollars. Les entreprises citées sont fictives et servent à illustrer la méthode.</p></details>
+  <details><summary>Comment vais-je recevoir le guide ?</summary><p>Après le paiement sur Chariow, tu accèdes au téléchargement du PDF. Tu peux le lire sur téléphone, tablette ou ordinateur, et l'imprimer.</p></details>
+  <details><summary>ChatGPT ou Claude : lequel faut-il ?</summary><p>N'importe lequel des deux. Tous les prompts fonctionnent avec les deux assistants, et le guide t'indique dans quels cas l'un est plus confortable que l'autre.</p></details>
+</div></section>
+
+<!-- ============================ FINAL ============================ -->
+<section class="alt"><div class="wrap narrow center">
+  <h2>Dans 90 jours, tu seras au même endroit.<br>Ou tu auras envoyé ton premier devis.</h2>
+  <p class="lead">L'IA t'apporte la vitesse. Le guide t'apporte la méthode. Le premier message à un prospect, c'est toi qui l'envoies.</p>
+  <p style="margin-top:28px"><a class="cta buy" href="https://bslmpstz.mychariow.shop/prd_fycxx5mz" target="_blank" rel="noopener">Oui, je commence maintenant<small class="p-inline">Téléchargement immédiat en PDF</small></a></p>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b style="color:#fff">L'IA qui rapporte</b> · Guide pratique en PDF · Édition 2026</p>
+  <p>Ce guide a une vocation pédagogique et ne garantit aucun revenu. Les résultats dépendent du travail, du marché et de la régularité de chacun. Les entreprises citées dans les exemples sont fictives. ChatGPT est un produit d'OpenAI, Claude un produit d'Anthropic ; ce guide est indépendant et n'est affilié à aucune de ces sociétés.</p>
+</div></footer>
+
+<div class="mobilebar"><a class="buy" href="https://bslmpstz.mychariow.shop/prd_fycxx5mz" target="_blank" rel="noopener">Obtenir le guide <span class="p-val"></span></a></div>
+
+<script>
+(function(){
+  var ok = LIEN_CHARIOW && LIEN_CHARIOW.indexOf("COLLE-TON-LIEN") === -1;
+  if (ok) document.querySelectorAll("a.buy").forEach(function(a){
+    // les boutons du haut mènent à l'offre ; les boutons de l'offre et du bas mènent au paiement
+    if (a.closest("#offre") || a.closest(".mobilebar") || a.closest(".alt.final") ) { a.href = LIEN_CHARIOW; a.target = "_blank"; a.rel = "noopener"; }
+  });
+  if (ok) { var last = document.querySelectorAll("section.alt a.buy"); if (last.length) { var l = last[last.length-1]; l.href = LIEN_CHARIOW; l.target = "_blank"; l.rel = "noopener"; } }
+  if (PRIX) {
+    document.getElementById("priceBox").hidden = false;
+    document.querySelectorAll(".p-val").forEach(function(e){ e.textContent = e.closest(".mobilebar") ? "· " + PRIX : PRIX; });
+  }
+})();
+</script>
+</body>
+</html>

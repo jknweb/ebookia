@@ -1,0 +1,11 @@
+PAGE DE VENTE — L'IA QUI RAPPORTE
+
+1. Ouvre index.html avec un éditeur de texte (Bloc-notes, VS Code...).
+2. Tout en haut, dans la zone "RÉGLAGES", modifie 2 lignes :
+     const LIEN_CHARIOW = "https://..."   -> colle ton lien de paiement Chariow
+     const PRIX = ""                      -> écris ton prix, ex. "9 900 FCFA" ou "15 $"
+3. Enregistre. Double-clique sur index.html pour vérifier dans ton navigateur.
+4. Mets en ligne le dossier complet (index.html + dossier images) chez ton hébergeur.
+
+Les boutons du haut font défiler jusqu'à l'offre ; les boutons de l'offre,
+du bas de page et la barre mobile ouvrent ton lien Chariow.
